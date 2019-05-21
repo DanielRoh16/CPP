@@ -5,11 +5,41 @@
 
 int main()
 {
-    std::cout << "Hello World!\n"; 
-	int inputValue;
-	std::cout << "input int Value:";
-	std::cin >> inputValue;
-	std::cout << "Your input Value is: " << inputValue;
+	double weight;
+	int x;
+
+	std::cout << "Please input your weight in the Earth: ";
+	std::cin >> weight;
+
+	std::cout << "Here is list of the Planets.";
+	std::cout << "\n 1. Venus    2. Mars    3. Jupiter    4. Saturn    5. Uranus    6. Neptune\n";
+	std::cout << "Which Planet are you visitting? : ";
+	std::cin >> x;
+
+	if (x == 1) {
+		weight = weight * 0.78;
+	} 
+	else if (x == 2) {
+		weight = weight * 0.39;
+	}
+	else if (x == 3) {
+		weight = weight * 2.65;
+	}
+	else if (x == 4) {
+		weight = weight * 1.17;
+	}
+	else if (x == 5) {
+		weight = weight * 1.05;
+	}
+	else if (x == 6) {
+		weight = weight * 1.23;
+	}
+	else
+	{
+		std::cout << "Wrong input!!!!";
+	}
+
+	std::cout << "Your weight is " << weight;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
