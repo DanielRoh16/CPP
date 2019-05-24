@@ -1,11 +1,17 @@
 #include "mySum.h"
-using namespace std;
 
+using namespace std;
 
 mySum::mySum()
 {
-		m_num = 0;
+	m_num = 0;
+	cout << "constructor executed" << endl;
 }
+mySum::~mySum()
+{
+	cout << "destructor executed" << endl;
+}
+
 
 void mySum::addNum(int a_num)
 {

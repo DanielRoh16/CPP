@@ -1,10 +1,12 @@
 #include <iostream>
+#include <malloc.h>
 #pragma once
 
 class mySum
 {
 public:
 	mySum();
+	~mySum();
 
 	void addNum(int a_num);
 
@@ -13,6 +15,7 @@ public:
 	void operator=(int a_num);
 
 	void printValue();
+
 
 private:
 	int m_num;
